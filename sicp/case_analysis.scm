@@ -6,3 +6,8 @@
 (define (absa x)
 	(cond ((< x 0) (- x)) 
 		(else x)))
+
+(define (absb x)
+	(if (< x 0)
+		(- x)
+		x))
