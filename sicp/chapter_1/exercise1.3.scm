@@ -10,6 +10,10 @@
 (define (abs a)
 	(if (< a 0) (- a) a))
 
-
 (define (max2 a b)
 	(/ (+ (+ a b) (abs (- a b))) 2))
+
+
+; Instead of finding two larger numbers we find 1 minimum number and exclude it
+(define (min a b c)
+	(cond (and (> a b) (> b c)) c))
